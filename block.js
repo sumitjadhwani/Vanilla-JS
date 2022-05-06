@@ -7,7 +7,7 @@
 if(true) console.log(450);
 
 
-//So, If we want to execute more statements we need to use BLOCK
+//So, If we want to execute more than one statements we need to use BLOCK
 if(true) {
 	var x = 10;
   var y = 1;
