@@ -1,11 +1,15 @@
 function x() {
-	var a =1;
+	var a = 100;
   
-  function y(){
-  debugger;
+  return function y(){
   console.log(a);
   }
-  y();
+  
 }
 
-x();  // Outputs 1
+var z = x();  
+console.log(z); // Prints function 
+z(); // prints 100 
+
+// So this means JS remebers closures of returned function.
+// i.e it returns the reference of that original function.
