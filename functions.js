@@ -27,3 +27,21 @@ var a = function abc() {
 }
 a();
 
+//First Class functions 
+/*
+A programming lang is said to have first class
+functions when functions are treated same as variables.
+That means function can be returned from another function as well as can be passed as arguments to the functions.
+
+Refer to above example for first class functions.
+*/
+//When function is passed as argument
+function sayHello() {
+   return "Hello, ";
+}
+function greeting(helloMessage, name) {
+  console.log(helloMessage() + name);
+}
+// Pass `sayHello` as an argument to `greeting` function
+greeting(sayHello, "JavaScript!");
+// Hello, JavaScript!
