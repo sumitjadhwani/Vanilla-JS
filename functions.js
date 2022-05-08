@@ -28,6 +28,7 @@ var a = function abc() {
 a();
 
 //First Class functions 
+//Functions are First Class Citizens in JS
 /*
 A programming lang is said to have first class
 functions when functions are treated same as variables.
