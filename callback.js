@@ -17,5 +17,5 @@ x(y);
 /*
 Advantages of callback functions:
 It gives us access to whole async world in synchronous single threaded language.
-It gives us the ability to perform various operations without blocking main thread.
+It gives us the ability to perform various operations without blocking main thread/callstack.
 */
