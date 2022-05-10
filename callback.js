@@ -2,14 +2,20 @@ setTimeout(function callBackFunc(){
   console.log("callBackFunc from setTimeout called");
 },5000);
 
-function abc(){
-  //Here eventListener has formed closure with count
-  //Hence data hiding as it can't be accessed from outside
-  let count = 0;
-  document.getElementById("clickME")
-    .addEventListener("click", function xyz() {
-      console.log("Count: ",++count);
-    });
+function x(y){
+  console.log("Inside function x");
+  console.log("Calling y() from x()");
+  y();
+}
+function y(){
+  console.log("Inside function y");
 }
 
-abc();
+x(y);
+//Here fuction y is callback function as it gives control to another function to call y anytime in code. i.e function y() is called back later some time
+ 
+/*
+Advantages of callback functions:
+It gives us access to whole async world in synchronous single threaded language.
+It gives us the ability to perform various operations without blocking main thread.
+*/
