@@ -8,15 +8,6 @@ i.e to make code more modularize.
 
 var radius = [1,2,3];
 
-function calculate(radius, cricleLogic) {
-  var output = [];
-
-  for(let i=0; i < radius.length; i++) {
-    output.push(cricleLogic(radius[i]));
-  }
-  return output;
-}
-
 function area(radius) {
   return Math.PI * radius * radius;
 }
@@ -27,6 +18,15 @@ function circumference(radius) {
 
 function diameter(radius) {
   return 2 * radius;
+}
+
+function calculate(radius, cricleLogic) {
+  var output = [];
+
+  for(let i=0; i < radius.length; i++) {
+    output.push(cricleLogic(radius[i]));
+  }
+  return output;
 }
 
 console.log("Area of circles: ",calculate(radius, area));
