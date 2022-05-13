@@ -8,11 +8,11 @@ i.e to make code more modularize.
 
 var radius = [1,2,3];
 
-function calculate(radius, x) {
+function calculate(radius, cricleLogic) {
   var output = [];
 
   for(let i=0; i < radius.length; i++) {
-    output.push(x(radius[i]));
+    output.push(cricleLogic(radius[i]));
   }
   return output;
 }
