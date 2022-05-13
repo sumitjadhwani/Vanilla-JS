@@ -6,6 +6,7 @@ All about different types of functions.
 4. Anonymous function.
 5. Named function expression.
 6. First Class functions 
+7. Higher Order functions
 */
 
 //Function Statement aka Function declaration
@@ -46,3 +47,5 @@ function greeting(helloMessage, name) {
 // Pass `sayHello` as an argument to `greeting` function
 greeting(sayHello, "JavaScript!");
 // Hello, JavaScript!
+
+
