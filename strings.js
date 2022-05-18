@@ -1,3 +1,10 @@
+/*
+Note
+All string methods return a new string. They don't modify the original string.
+Formally said:
+Strings are immutable: Strings cannot be changed, only replaced.
+*/
+
 //Valid Strings
 let a = "Nikola Tesla";
 let b = 'Elon Musk';
@@ -46,5 +53,42 @@ The replace() method replaces only the first match
 */
 let c = a.replace("awesome","interesting");
 console.log(c);
+
+//6. uppercase
+//It doesn't modify the string
+console.log(a.toUpperCase());
+
+//7. lowercase
+console.log(a.toLowerCase());
+
+// 8. trim
+//Trims the whitespace 
+let t = "          fds          ";
+console.log(t.trim());
+
+//9. padStart(targetLength, padString) & padEnd
+//It was introduced in ECMA 2017
+t = "abc";
+console.log(t.padStart(6,'0'));
+console.log(t.padEnd(6,'0'));
+
+
+//Extracting string characters methods
+//10. charAt(position) 0 indexing
+console.log(t.charAt(0));
+
+//11. charCodeAt(position) 
+// It returns UTF-16 code (an integer between 0 and 65535).
+console.log(t.charCodeAt(0));
+
+console.log(t[0]);
+
+//Converting string to array
+//12.split()
+t = "a,b,c,d,e,f";
+console.log(t.split(","));
+
+//If separator is invalid it will return whole string in arr[0]
+console.log(t.split(";"));
 
 
