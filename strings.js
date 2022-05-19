@@ -92,3 +92,26 @@ console.log(t.split(","));
 console.log(t.split(";"));
 
 
+//Search Methods
+let str = "Please locate where 'locate' occurs!";
+console.log(str.indexOf("locate"));
+
+str = "Please locate where 'locate' occurs!";
+console.log(str.lastIndexOf("locate"));
+
+//Both methods accept 2nd parameter as start of string
+console.log(str.indexOf("locate",8));
+
+
+//match(regex)
+let text = "The rain in SPAIN stays mainly in the plain";
+console.log(text.match(/ain/gi));
+
+//includes returns true or false
+//string.includes(searchvalue, start)
+console.log(text.includes("ain"));
+//true
+
+
+
+
