@@ -20,14 +20,17 @@ console.log(result);
 
 // Reduce returns only one computed value 
 //Used when the output is single variables formed by some operations on arr
+//It takes two arguments first is function which is called for each iteration and second one is value for accumulator.
 // Eg. find max, sum and so on.
 //Find SUM
- const output = arr.reduce(function(a,b){
-  a= a+b;
-  return a;
-},0);
+const sum = numbers.reduce(
+  function(acc, n) {
+    return acc + n;
+  },
+  0 // accumulator variable value at first iteration step
+);
+console.log(sum) // 21
 
-console.log(output);
 
 //Find MAX
 const max = arr.reduce(function(max,first){
